@@ -4,4 +4,4 @@ app = Flask("Olá") #referencia a aplicação
 
 @app.route('/')
 def ola():
-    return "Olá mundo!"
+    return "Entendendo variáveis de ambiente."
