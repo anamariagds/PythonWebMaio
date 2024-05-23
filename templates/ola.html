@@ -3,36 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aula 22/05 </title>
 </head>
 <body>
-    <h1>Lista de Series</h1>
-    <ul>
-        <li>Fleabag</li>
-        <li>Succession</li>
-        <li>The Office</li>
-        <li>Superstore</li>
-    </ul>
-    <ol>
-        <li>Maracujá</li>
-        <li>Pera</li>
-        <li>Pitomba</li>
-        <li>Limão</li>
-        <li>Cajá</li>
-        <li>Abacaxi</li>
-        <li>Tangerina</li>
-    
-    </ol>  
-    
-    <dl>
-    <dt>HTML</dt>
-    <dd>Linguagem de Marcação de Hipertexto</dd>
-    <dt>Python</dt>
-    <dd>Melhor linguagem do mundo</dd>
-    </dl>
-    <h2>Obra de Arte</h2>
-    <img src="https://br.web.img2.acsta.net/c_310_420/pictures/22/04/04/19/23/5965850.png" height="200" width="200" alt="Park Jimin">
-    <a href="https://dev.to/loremimpsu/entendendo-algoritmos-primeira-semana-5fmn/">Clique aqui</a>
-    
+   
+    {% for post in posts%}
+        <h1>{{post.titulo}}</h1>
+        <p>{{post.texto}}</p>
+        <h2>{{post.data_criacao}}</h2>
+    {%endfor%}
+
 </body>
 </html>
