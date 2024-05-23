@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteudo_principal">
+        <h1>Blog Aula</h1>
+        <div class="nav">
+            {% if not session.logado %}
+                <a href="">Login</a>
+            {%else%}
+                <a href="">Logout</a>
+            {%endif%}
+        </div>
+    </div>
+</body>
+</html>
